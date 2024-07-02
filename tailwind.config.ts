@@ -9,10 +9,32 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "bg-xl-hero": "url(/assets/original.jpg)",
+        "bg-lg-hero": "url(/assets/original-3200x1320.jpg)",
+        "bg-xs-hero": "url(/assets/original-656x1140.jpg)",
+        "bg-md-hero": "url(/assets/original-1140x980.jpg)",
+        "tab-1": "url(/assets/tab-1.jpg)",
+        "tab-1-sm": "url(/assets/tab-1-sm.jpg)",
+        "tab-2": "url(/assets/tab-2.jpg)",
+        "tab-2-sm": "url(/assets/tab-2-sm.jpg)",
+        "tab-3": "url(/assets/tab-3.jpg)",
+        "tab-3-sm": "url(/assets/tab-3-sm.jpg)",
       },
+      screens: {
+        "xs": "540px",
+      },
+      colors: {
+        "green-primary": "#1ce783",
+      },
+      content: {
+        'menu': 'url("/assets/icon-menu.svg")',
+        'logo': 'url("/assets/logo.png")',
+        'disney': 'url("/assets/icon-disney.svg)',
+        'arrow': 'url("/assets/icon-arrow-down.svg")',
+      },
+      backgroundPosition: {
+        "tab-sm": "center"
+      }
     },
   },
   plugins: [],
