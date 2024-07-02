@@ -36,7 +36,7 @@ const Welcome = () => {
                 <div className='relative w-full h-0 pb-[20%]'>
                     <Image
                         priority={true}
-                        src={'/assets/icon-welcome-2.png'}
+                        src={`${basePath}/assets/icon-welcome-2.png`}
                         alt='logo'
                         layout='fill'
                         objectFit='contain'

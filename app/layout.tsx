@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { basePath } from "@/next.config";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="shortcut icon" href={`/favicon.ico`} type="image/x-icon" />
+        <link rel="shortcut icon" href={`${basePath}/favicon.ico`} type="image/x-icon" />
       </head>
       <body className={`${inter.className} relative`}>{children}</body>
     </html>

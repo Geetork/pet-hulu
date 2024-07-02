@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components';
+import { basePath } from '@/next.config';
 
 const Header = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -11,7 +12,7 @@ const Header = () => {
         <header className='absolute top-0 w-full h-[74px] flex items-center px-10 justify-between'>
             <Image
                 priority={true}
-                src={'/assets/logo.png'}
+                src={`${basePath}/assets/logo.png`}
                 alt='logo'
                 height={24}
                 width={61}

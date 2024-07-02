@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components';
 import Image from 'next/image';
 import subscriptions, { ISubscription } from '@/subscriptions';
+import { basePath } from '@/next.config';
 
 const tabs = ['Hulu', 'Disney Bundle', 'Live TV']
 
@@ -17,7 +18,7 @@ const SubscriptionCard: React.FC<{
             <div className='relative w-full h-0 pb-[5%]'>
                 <Image
                     priority={true}
-                    src={'/assets/hulu-logo.svg'}
+                    src={`${basePath}/assets/hulu-logo.svg`}
                     alt='logo'
                     layout='fill'
                     objectFit='contain'
@@ -51,7 +52,7 @@ const FieldRow: React.FC<{
                     <div key={id} className='flex-1'>
                         {
                             subscription[field] ? 
-                            subscription[field] === true ? <div className='relative w-full h-0 pb-[7%] md:pb-[4%]'><Image src={'/assets/icon-green-ok.svg'} alt='ok' layout='fill'
+                            subscription[field] === true ? <div className='relative w-full h-0 pb-[7%] md:pb-[4%]'><Image src={`${basePath}/assets/icon-green-ok.svg`} alt='ok' layout='fill'
                             objectFit='contain'/></div> : 
                             subscription[field] : <span>-</span>
                         }
