@@ -28,7 +28,7 @@ const config: Config = {
         "green-primary": "#1ce783",
       },
       content: {
-        'menu': `url(${basePath}/assets/icon-menu.svg")`,
+        'menu': `url(${basePath}/assets/icon-menu.svg)`,
         'logo': `url("${basePath}/assets/logo.png)`,
         'disney': `url(${basePath}/assets/icon-disney.svg)`,
         'arrow': `url(${basePath}/assets/icon-arrow-down.svg)`,
