@@ -31,7 +31,7 @@ const config: Config = {
         'menu': `url(${basePath}/assets/icon-menu.svg")`,
         'logo': `url("${basePath}/assets/logo.png")`,
         'disney': `url(${basePath}/assets/icon-disney.svg)`,
-        'arrow': `url(${basePath}/assets/icon-arrow-down.svg")`,
+        'arrow': `url(${basePath}/assets/icon-arrow-down.svg)`,
       },
       backgroundPosition: {
         "tab-sm": "center"
