@@ -11,7 +11,7 @@ export default function Home() {
         <section className="flex flex-col bg-gradient-to-b from-emerald-600 via-emerald-950 to-black h-fit justify-center items-center pb-4">
           <div className="flex h-[80px] items-center">
             <h1 className="text-gray-200 font-bold xs:text-md text-sm">
-              BUILD THE PLAN THAT'S RIGHT FOR YOU
+              BUILD THE PLAN THAT&apos;S RIGHT FOR YOU
             </h1>
           </div>
 
@@ -32,7 +32,7 @@ export default function Home() {
             Live TV Make It Better
           </h1>
         </section>
-        
+
         <Spotlight/>
         <SubscriptionPlans/>
       </main>

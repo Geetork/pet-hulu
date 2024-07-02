@@ -3,7 +3,7 @@
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-    basePath: isProd ? 'pet-hulu' : '',
+    basePath: '/pet-hulu',
     output: "export",
     images: {
         unoptimized: true,
