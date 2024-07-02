@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { basePath } from "./next.config";
 
 const config: Config = {
   content: [
@@ -9,10 +10,10 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "bg-xl-hero": "url(/assets/original.jpg)",
-        "bg-lg-hero": "url(/assets/original-3200x1320.jpg)",
-        "bg-xs-hero": "url(/assets/original-656x1140.jpg)",
-        "bg-md-hero": "url(/assets/original-1140x980.jpg)",
+        "bg-xl-hero": `url(${basePath}/assets/original.jpg)`,
+        "bg-lg-hero": `url(${basePath}/assets/original-3200x1320.jpg)`,
+        "bg-xs-hero": `url(${basePath}/assets/original-656x1140.jpg)`,
+        "bg-md-hero": `url(${basePath}/assets/original-1140x980.jpg)`,
         "tab-1": "url(/assets/tab-1.jpg)",
         "tab-1-sm": "url(/assets/tab-1-sm.jpg)",
         "tab-2": "url(/assets/tab-2.jpg)",
@@ -27,7 +28,7 @@ const config: Config = {
         "green-primary": "#1ce783",
       },
       content: {
-        'menu': 'url("/assets/icon-menu.svg")',
+        'menu': 'url(/assets/icon-menu.svg")',
         'logo': 'url("/assets/logo.png")',
         'disney': 'url("/assets/icon-disney.svg)',
         'arrow': 'url("/assets/icon-arrow-down.svg")',

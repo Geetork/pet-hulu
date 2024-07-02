@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Button } from '@/components';
+import { basePath } from '@/next.config';
 
 const Welcome = () => {
   return (
@@ -12,7 +13,7 @@ const Welcome = () => {
                 <div className='relative w-full h-0 pb-[20%]'>
                     <Image
                         priority={true}
-                        src={'/assets/icon-welcome.png'}
+                        src={`${basePath}/assets/icon-welcome.png`}
                         alt='logo'
                         layout='fill'
                         objectFit='contain'
