@@ -52,7 +52,7 @@ const FieldRow: React.FC<{
                     <div key={id} className='flex-1'>
                         {
                             subscription[field] ? 
-                            subscription[field] === true ? <div className='relative w-full h-0 pb-[7%] md:pb-[4%]'><Image src={`${basePath}/assets/icon-green-ok.svg`} alt='ok' layout='fill'
+                            subscription[field] === true ? <div className='relative w-full h-0 pb-[8%] md:pb-[4%]'><Image src={`${basePath}/assets/icon-green-ok.svg`} alt='ok' layout='fill'
                             objectFit='contain'/></div> : 
                             subscription[field] : <span>-</span>
                         }
