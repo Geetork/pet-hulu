@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href={`${basePath}/favicon.ico`} type="image/x-icon" />
       </head>
-      <body className={`${inter.className} relative`}>{children}</body>
+      <body className={`${inter.className} relative overflow-x-hidden`}>{children}</body>
     </html>
   );
 }
