@@ -13,7 +13,7 @@ const TabContent: React.FC<{
         <article className='flex flex-col max-md:items-center 
                             max-md:text-center gap-4'>
             <h1 className='font-bold text-4xl'>{title}</h1>
-            <p className='max-w-[500px]'>{text}</p>
+            <p className='max-w-[500px] font-medium'>{text}</p>
         </article>
     )
 }
@@ -56,7 +56,7 @@ const Spotlight = () => {
 
     return (
         <section className={`flex flex-col h-screen w-full ${bgImage[activeTab]}
-                             bg-cover bg-center p-6 text-gray-200 gap-16 
+                             bg-cover bg-center p-6 text-white gap-16 
                              md:items-start md:justify-center`}>
             <ul className='flex justify-center gap-2 text-nowrap'>
             {
@@ -66,7 +66,7 @@ const Spotlight = () => {
                             onClick={() => setActiveTab(tab)}
                             title={tab}
                             type='tertiary'
-                            className={`text-[0.55rem] xs:text-[0.8rem] rounded-none 
+                            className={`text-[0.56rem] xs:text-[0.8rem] rounded-none 
                                         border-b-2 border-b-transparent hover:bg-transparent 
                                         px-[0] py-2 ${tab === activeTab ? 
                                         'text-white border-b-white' : ''}`}
