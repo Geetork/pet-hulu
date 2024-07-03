@@ -66,10 +66,10 @@ const Spotlight = () => {
                             onClick={() => setActiveTab(tab)}
                             title={tab}
                             type='tertiary'
-                            className={`text-[0.6rem] xs:text-[0.8rem] rounded-none 
+                            className={`text-[0.55rem] xs:text-[0.8rem] rounded-none 
                                         border-b-2 border-b-transparent hover:bg-transparent 
                                         px-[0] py-2 ${tab === activeTab ? 
-                                        'text-white border-b-gray-200' : ''}`}
+                                        'text-white border-b-white' : ''}`}
                         />
                     </li>
                 ))
