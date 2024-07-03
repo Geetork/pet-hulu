@@ -104,7 +104,7 @@ const SubscriptionPlans = () => {
                             onClick={() => setActiveTab(tab)}
                             title={tab}
                             type='tertiary'
-                            className={`font-semibold text-[0.7rem] sm:text-[1rem] px-4 border-b-transparent py-2 text-gray-700 ${tab === activeTab ? 'bg-gray-200' : ''} transition-none`}
+                            className={`font-semibold text-[0.7rem] sm:text-[1rem] px-4 border-b-transparent py-2 text-gray-700 ${tab === activeTab ? 'bg-gray-200' : ''} transition-none max-xs:text-[0.7rem] max-xs:px-4`}
                         />
                     </li>
                 ))
