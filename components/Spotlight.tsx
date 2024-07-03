@@ -67,7 +67,7 @@ const Spotlight = () => {
                             title={tab}
                             type='tertiary'
                             className={`text-[0.56rem] xs:text-[0.8rem] rounded-none 
-                                        border-b-2 border-b-transparent hover:bg-transparent 
+                                        border-b-2 border-b-transparent  
                                         px-[0] py-2 ${tab === activeTab ? 
                                         'text-white border-b-white' : ''}`}
                         />

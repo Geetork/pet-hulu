@@ -13,7 +13,7 @@ const Button: React.FC<{
     const typeClasses = {
         'primary': 'bg-green-primary text-black hover:bg-green-primary/70',
         'secondary': 'bg-gray-600',
-        'tertiary': 'text-gray-400 hover:bg-gray-400/50 hover:text-gray-200',
+        'tertiary': 'text-gray-400 hover:text-slate-400',
     }
 
     return (

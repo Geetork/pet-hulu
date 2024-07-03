@@ -13,7 +13,7 @@ const SubscriptionCard: React.FC<{
     subscriptionTitle: string,
     subscriptionName: string,
 }> = ({ subscriptionTitle, subscription, subscriptionName }) => (
-    <div className='flex flex-col gap-2 w-full max-xs:text-[0.6rem]'>
+    <div className='flex flex-col gap-2 w-full max-xs:text-[0.65rem]'>
         {subscriptionTitle === 'Hulu' && (
             <div className='relative w-full h-0 pb-[5%]'>
                 <Image
@@ -29,8 +29,8 @@ const SubscriptionCard: React.FC<{
             <Button
                 title={`${subscription['Monthly price']}`}
                 type='secondary'
-                className='bg-gray-100/90 text-black hover:bg-gray-400
-                            max-xs:text-[0.6rem] max-xs:px-2'/>
+                className='bg-gray-100 text-black hover:bg-gray-300
+                            max-xs:text-[0.6rem] max-xs:px-2 font-medium'/>
         </div>
     </div>
 );
@@ -117,8 +117,7 @@ const SubscriptionPlans = () => {
                 Switch plans or cancel anytime.**
             </p>
 
-            <ul className='flex justify-center gap-4 text-nowrap
-                         bg-emerald-600 rounded-xl p-1'>
+            <ul className='flex justify-center gap-4 text-nowrap bg-emerald-600 rounded-xl p-1'>
             {
                 tabs.map((tab, id) => (
                     <li key={id}>
@@ -126,8 +125,8 @@ const SubscriptionPlans = () => {
                             onClick={() => setActiveTab(tab)}
                             title={tab}
                             type='tertiary'
-                            className={`font-semibold text-[0.7rem] sm:text-[1rem] px-4 
-                                        border-b-transparent py-2 text-gray-700 
+                            className={`font-medium text-[0.7rem] sm:text-[1rem] px-4 
+                                        border-b-transparent py-2 text-gray-700
                                         ${tab === activeTab ? 'bg-gray-200' : ''} 
                                         transition-none max-xs:text-[0.7rem] max-xs:px-4`}
                         />

@@ -22,7 +22,7 @@ const Header = () => {
                 <Button
                     type='tertiary'
                     title='LOG IN'
-                    className='max-sm:hidden'/>
+                    className='max-sm:hidden hover:bg-gray-400/40'/>
                 <Button
                     onClick={() => setIsVisible(prevState => !prevState)}
                     type='secondary'
