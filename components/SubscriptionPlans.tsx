@@ -13,7 +13,7 @@ const SubscriptionCard: React.FC<{
     subscriptionTitle: string,
     subscriptionName: string,
 }> = ({ subscriptionTitle, subscription, subscriptionName }) => (
-    <div className='flex flex-col gap-2 w-full'>
+    <div className='flex flex-col gap-2 w-full max-xs:text-[0.6rem]'>
         {subscriptionTitle === 'Hulu' && (
             <div className='relative w-full h-0 pb-[5%]'>
                 <Image
@@ -30,7 +30,7 @@ const SubscriptionCard: React.FC<{
             <Button
                 title={`${subscription['Monthly price']}`}
                 type='secondary'
-                className='bg-gray-100/90 text-black hover:bg-gray-400'
+                className='bg-gray-100/90 text-black hover:bg-gray-400 max-xs:text-[0.6rem] max-xs:px-2'
             />
         </div>
     </div>
@@ -74,7 +74,7 @@ const SubscriptionPlan: React.FC<{
     return (
         <section className='flex flex-col w-full'>
             <div className='sticky top-0 flex w-full justify-between md:w-full md:justify-end my-6 bg-black py-4 z-10'>
-                <div className='top-0 flex flex-row md:w-[60%] w-full gap-4'>
+                <div className='top-0 flex flex-row md:w-[60%] w-full justify-between gap-2'>
                     {Object.entries(data).map(([title, subscription], id) => (
                         <SubscriptionCard key={id} subscriptionTitle={subscriptionTitle} subscriptionName={title} subscription={subscription} />
                     ))}
